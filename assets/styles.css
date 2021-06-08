@@ -1,0 +1,173 @@
+:root {
+    --background: rgb(29, 29, 29);
+
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 2rem;
+    padding: 0;
+}
+
+.background {
+  position:fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--background);
+}
+
+.menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 110rem;
+    background-color: var(--background);
+
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fed330;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: #fc5c65;
+    transition: all 150ms ease-in-out;
+    background-color: rgb(22, 22, 22);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: #fc5c65;
+    font-weight: 1000;
+    margin: 0;
+    padding: 2rem;
+}
+
+.section {
+    min-height: 100vh;
+    background-color: var(--background);
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.main-content {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+    color: white;
+
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+
+    text-align: center;
+}
+
+h3 a {
+    font-size: 2.7rem;
+    color: #2bcbba;
+    transition: all 300ms ease-in-out;
+}
+
+h3 a:hover {
+    font-size: 2.7rem;
+    color: #fed330;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.itens {
+    padding: 10px;
+}
+
+.categoria {
+    text-align: center;
+    color: #fd9644;
+    margin: 25px 0 20px 0;
+}
+
+.item {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 3px 3px 15px black;
+    transition: all 200ms ease-in-out;
+}
+
+.item:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .menu {
+        visibility: collapse;
+    }
+}
+
