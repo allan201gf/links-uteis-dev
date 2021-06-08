@@ -4,7 +4,7 @@ Projeto feito em HTML e CSS para juntar em categorias sites com conteúdo gráti
 
 Categorias adicionadas:
 
-1. Imagens
-2. Ícones
-3. Cores
+1. Imagens;
+2. Ícones;
+3. Cores.
 
